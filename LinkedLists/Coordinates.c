@@ -61,10 +61,10 @@ struct test_struct* add_to_list(int val, bool add_to_end)
     ptr->x1 = xval;
     printf("Enter x2 value: \n");
     scanf("%f", &xval);
-    ptr->x1 = xval;
+    ptr->x2 = xval;
     printf("Enter x3 value: \n");
     scanf("%f", &xval);
-    ptr->x1 = xval;
+    ptr->x3 = xval;
 
     ptr->val = val;
     ptr->next = NULL;
@@ -151,7 +151,7 @@ int delete_from_list(int val)
 
 void print_list(void)
 {
-	float xval;
+
     struct test_struct *ptr = head;
 
     printf("\n -------Printing list Start------- \n");
